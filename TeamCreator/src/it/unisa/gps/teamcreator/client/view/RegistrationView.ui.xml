@@ -1,0 +1,194 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:gwt="urn:import:com.google.gwt.user.client.ui"
+	xmlns:ui="urn:ui:com.google.gwt.uibinder">
+
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<gwt:HTMLPanel>
+		<div class="portlet-header">
+
+			<div class="caption">
+				<h1 style="margin-left: auto; margin-right: auto; width: 70%;"> Registration to Team Creator</h1>
+			</div>
+		</div>
+
+		<p></p>
+		<!-- Inizio FORM REGISTRAZIONE -->
+		<div class="col-lg-8" style="margin-left:2%;">
+			<div class="panel panel-orange" style=" border-color:#4b5d67; width:100%;">
+				<div class="panel-heading" style="background:#4b5d67;">
+					Registration form</div>
+				<div class="panel-body pan">
+					<form action="#">
+						<div class="form-body pal">
+							<div class="form-group">
+								<div class="input-icon right">
+									<i class="fa fa-envelope"></i>
+									<input ui:field="email" type="text" placeholder="Email address"
+										class="form-control" onblur="valid_email(this.id)" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-icon right">
+									<i class="fa fa-lock"></i>
+									<input ui:field="password" type="password" placeholder="Password"
+										class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-icon right">
+									<i class="fa fa-lock"></i>
+									<input ui:field="confirmPassword" type="password"
+										placeholder="Confirm Password" class="form-control" onblur="valid_p(this.id)" />
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input ui:field="firstname" type="text" placeholder="First Name"
+											class="form-control" onblur="valid_n_s(this.id)" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input ui:field="lastname" type="text" placeholder="Last Name"
+											class="form-control" onblur="valid_n_s(this.id)" />
+									</div>
+								</div>
+							</div>
+
+
+							<div class="form-group">
+								<div class="input-icon right">
+									<gwt:HTMLPanel ui:field="fileUploadPanel"></gwt:HTMLPanel>
+								</div>
+							</div>
+
+
+							<div class="form-group">
+
+								<textarea ui:field='workerDescription' rows="5"
+									placeholder="Describe your skills" class="form-control"></textarea>
+							</div>
+							<div class="form-actions text-right pal" style="background-color:white;">
+								<gwt:Button ui:field="submitButton">
+									Submit</gwt:Button>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- FINE FORM REGISTRAZIONE -->
+
+
+
+		<!-- Inizio LISTA -->
+
+		<div class="col-lg-3">
+			<div class="portlet box" style="width:380px;">
+
+				<div class="portlet-header">
+
+					<div class="caption">
+						Skills List</div>
+				</div>
+				<div style="height:470px;" class="portlet-body">
+
+					<div class="slimScrollDiv" style="position: relative; width: 100%; height: 100%">
+
+						<ul ui:field="competenceList" class="todo-list sortable ui-sortable"
+							style="overflow: auto; width: 100%; height: 100%">
+
+
+						</ul>
+						<div class="slimScrollBar"
+							style="background-color: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; height: 184.9112426035503px; background-position: initial initial; background-repeat: initial initial;"></div>
+						<div class="slimScrollRail"
+							style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; background-color: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px; background-position: initial initial; background-repeat: initial initial;"></div>
+					</div>
+				</div>
+				<div class="form-actions text-right pal" style="background-color:white;">
+					<gwt:Button ui:field="btnAddSkill">prova </gwt:Button>
+					<button type="btnAddSkill" class="btn btn-primary">
+						Add Skill</button>
+				</div>
+			</div>
+
+		</div>
+		<div id="footer">
+			<div class="copyright">
+				<a>2015 © TeamCreator project - relized by Guarino A. Landi G. Leone
+					A. Napoli G. Schiavone R. </a>
+			</div>
+		</div>
+
+		<gwt:HTMLPanel ui:field="provaFile">
+		</gwt:HTMLPanel>
+		<!-- FINE LISTA -->
+
+
+
+
+
+		<script src="script/jquery-1.10.2.min.js"></script>
+		<script src="script/jquery-migrate-1.2.1.min.js"></script>
+		<script src="script/jquery-ui.js"></script>
+		<script src="script/bootstrap.min.js"></script>
+		<script src="script/bootstrap-hover-dropdown.js"></script>
+		<script src="script/html5shiv.js"></script>
+		<script src="script/respond.min.js"></script>
+		<script src="script/jquery.metisMenu.js"></script>
+		<script src="script/jquery.slimscroll.js"></script>
+		<script src="script/jquery.cookie.js"></script>
+		<script src="script/icheck.min.js"></script>
+		<script src="script/custom.min.js"></script>
+		<script src="script/jquery.news-ticker.js"></script>
+		<script src="script/jquery.menu.js"></script>
+		<script src="script/pace.min.js"></script>
+		<script src="script/holder.js"></script>
+		<script src="script/responsive-tabs.js"></script>
+		<script src="script/jquery.flot.js"></script>
+		<script src="script/jquery.flot.categories.js"></script>
+		<script src="script/jquery.flot.pie.js"></script>
+		<script src="script/jquery.flot.tooltip.js"></script>
+		<script src="script/jquery.flot.resize.js"></script>
+		<script src="script/jquery.flot.fillbetween.js"></script>
+		<script src="script/jquery.flot.stack.js"></script>
+		<script src="script/jquery.flot.spline.js"></script>
+		<script src="script/zabuto_calendar.min.js"></script>
+		<script src="script/index.js"></script>
+		<!--LOADING SCRIPTS FOR CHARTS -->
+		<script src="script/highcharts.js"></script>
+		<script src="script/data.js"></script>
+		<script src="script/drilldown.js"></script>
+		<script src="script/exporting.js"></script>
+		<script src="script/highcharts-more.js"></script>
+		<script src="script/charts-highchart-pie.js"></script>
+		<script src="script/charts-highchart-more.js"></script>
+		<!--CORE JAVASCRIPT -->
+		<script src="script/main.js"></script>
+		<script> (function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js',
+			'ga');
+			ga('create', 'UA-145464-12', 'auto');
+			ga('send', 'pageview');
+
+
+		</script>
+	</gwt:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:gwt="urn:import:com.google.gwt.user.client.ui" xmlns:view="urn:import:it.unisa.gps.teamcreator.client.view">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<gwt:HTMLPanel>
+		<!--BEGIN CONTENT -->
+		<div ui:field="pageContent" class="page-content">
+		<div ui:field="coWorkerLoading"
+							style="position:absolute; display: block; top: 30%;width:100%;"></div>
+		
+
+			<div id="raffaele" class="row mbl">'
+				<div id="fonso" class="col-lg-4" style=" float:left;width:25%;height:580px;overflow: auto">
+					
+				</div>
+			</div>
+			<!--END CONTENT -->
+		</div>
+		
+		<div id="footer">
+			<div class="copyright">
+				<a>2015 © TeamCreator project - relized by   Guarino A. Landi G. Leone A. Napoli G. Schiavone R. </a>
+			</div>
+		</div>
+		
+	</gwt:HTMLPanel>
+</ui:UiBinder>

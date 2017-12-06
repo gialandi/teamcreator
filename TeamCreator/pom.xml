@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<repositories> 
+	<repository>
+    <id>cobogw</id>
+    <name>Cobogw repository at googlecode</name>
+    <url>http://cobogw.googlecode.com/svn/maven2</url>
+  </repository>
+  </repositories> 
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>TeamCreator</groupId>
+  <artifactId>TeamCreator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+    
+  </build>
+  <dependencies>
+  	<dependency>
+	   		 <groupId>org.apache.jena</groupId>
+	   		 <artifactId>apache-jena-libs</artifactId>
+	   		 <type>pom</type>
+	   		 <version>2.13.0</version>
+	  	</dependency>
+	  	<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20141113</version>
+		</dependency>
+  <dependency>
+	<groupId>com.googlecode.gwtupload</groupId>
+	<artifactId>gwtupload</artifactId>
+	<version>1.0.3</version>
+</dependency>
+  
+  </dependencies>
+  
+</project>

@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder 
+	xmlns:gwt="urn:import:com.google.gwt.user.client.ui"
+	xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+	xmlns:c="urn:import:com.google.gwt.core.client">
+	<ui:style>
+	
+	}
+	</ui:style>
+
+	<gwt:HTMLPanel>
+		<div id="login">
+			<div class="container">
+				<div class="card card-container">
+					<!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" 
+						alt="" /> -->
+					<img id="profile-img" class="profile-img-card" src="styles/login/omino.png" />
+					<p id="profile-name" class="profile-name-card"></p>
+					<form id="formId" class="form-signin">
+						<span id="reauth-email" class="reauth-email"></span>
+						<input type="text" id="inputEmail"  class="form-control"
+							placeholder=" Username" />
+						<input type="password" id="inputPassword" value="" class="form-control"
+							placeholder=" Password" />
+						<div id="remember" class="checkbox">
+							<label>
+								<input type="checkbox" value="remember-me" />
+								Remember me
+							</label>
+						</div>
+						
+						<gwt:Button ui:field="sendButton" >Sign in</gwt:Button>
+						<gwt:Button ui:field="registrationButton" >Registered</gwt:Button>
+					</form><!-- /form -->
+					<a href="#" class="forgot-password">
+						Forgot the password?
+					</a>
+				</div><!-- /card-container -->
+			</div><!-- /container -->
+		</div>
+	</gwt:HTMLPanel>
+
+</ui:UiBinder>

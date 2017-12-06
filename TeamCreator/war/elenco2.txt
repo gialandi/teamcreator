@@ -1,0 +1,10 @@
+Rolefante;Rossella;Elefante;rossellaelefante@hotmail.it;Hadoop;3;HTML5;4;C++;4;jquery;2;gwt;3;pearl;5
+Arino;Alfonso;Guarino;alfgua90@gmail.com;C;3;C++;3;Swift;1;Hadoop;4;HTML5;5;PHP;5;CSS;5;java;3;OWL;2;RDF;2
+Maluca;Mario;DeLuca;mariodeluca@live.com;gwt;5;pearl;5;C;3;C++;4;Hadoop;3;HTML5;3;PHP;3
+Montemauro;Mauro;Montefusco;mauromonte@gmail.com;CSS;5;HTML5;4;Ruby;5;PHP;5
+Tassolo;Pierpaolo;Tassieri;pierpata@live.com;XML;2;marketing;3;ObjectiveC;4;javascript;3;CSS3;5;java;3;gwt;2
+Rosti;Rosa;Nasti;rona@hotmail.com;PHP;1;HTML5;2;CSS;2;CSS3;2;jquery;4
+Molica;Angelica;Molinari;angelica@gmail.com;gwt;5;pearl;2;Ruby;3;C;4;C++;4;C#;5;ObjectiveC;4;Swift;3;RDF;2;OWL;1
+Liluzzi;Lino;Ieluzzi;albazar@gmail.com;marketing;3;Hadoop;4;HTML;4;XML;2;OWL;3;pearl;5
+Fasio;Fabio;Attanasio;fabio@live.it;PHP;3;RDF;3;Ruby;1;Swift;4;C;5;C#;5;C++;5;CSS;3;CSS3;2;gwt;2;Hadoop;5
+Alfasti;Alfonso;Nasti;a.nasti@tiscali.it;HTML;5;HTML5;3;java;4;javascript;3;jquery;3
